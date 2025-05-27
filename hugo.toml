@@ -2,10 +2,30 @@ baseURL = 'https://guilherme13c.github.io/simple-byte/'
 languageCode = 'en-us'
 title = 'Simple Byte'
 theme = "ananke"
-paginate = 10
+pagination.pagerSize = 10
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+[frontmatter]
+  date = ['date', 'pubdate', 'lastmod', 'modified']
+  expiryDate = ['unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'pubdate']
+  publishDate = ['pubdate', 'date']
 
 [params]
   author = "Guilherme Caporali"
+  favicon = "favicon.ico"
+  logo = "images/logo.png"
+  subtitle = 'Reference, Tutorials, and Explanations'
 
 [caches]
   [caches.images]
