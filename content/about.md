@@ -1,8 +1,8 @@
 ---
 title: "Content Placeholder"
 build:
-  render: never
+  render: always
   list: never
-  publishResources: false
+  publishResources: true
 ---
 
