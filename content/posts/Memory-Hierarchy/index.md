@@ -144,19 +144,21 @@ Memory hierarchy is a cornerstone of system performance. It balances speed, cost
 ## Recommended Resources
 
 * **Books**:
+  * [Computer Architecture: A Quantitative Approach by Hennessy & Patterson](https://www.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8)
+  * [Memory Systems: Cache, DRAM, Disk by Bruce Jacob et al.](https://www.elsevier.com/books/memory-systems/jacob/978-0-12-379751-3)
 
-  * "Computer Architecture: A Quantitative Approach" by Hennessy & Patterson
-  * "Memory Systems: Cache, DRAM, Disk" by Bruce Jacob et al.
 * **Academic Papers**:
+  * ["Hitting the Memory Wall: Implications of the Obvious" by Wulf and McKee](https://doi.org/10.1145/276203.276223)
+  * [IEEE Xplore – Emerging Memory Technologies](https://ieeexplore.ieee.org/Xplore/home.jsp)
 
-  * “The Memory Wall” by Wulf and McKee
-  * Research on memristors, PCM, and in-memory computing (IEEE, ACM)
 * **YouTube Channels**:
+  * [Computerphile](https://www.youtube.com/user/Computerphile)
+  * [Two Minute Papers](https://www.youtube.com/user/keeroyz)
+  * [MIT OpenCourseWare](https://www.youtube.com/user/MIT)
 
-  * Computerphile, Two Minute Papers, MIT OpenCourseWare
 * **Courses**:
-
-  * MIT 6.004, Carnegie Mellon’s 15-213
+  * [MIT 6.004: Computation Structures](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/)
+  * [Carnegie Mellon 15-213: Introduction to Computer Systems](https://www.cs.cmu.edu/~213/)
 
 ## FAQ
 
