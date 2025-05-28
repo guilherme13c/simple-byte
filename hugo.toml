@@ -4,6 +4,8 @@ title = 'Simple Byte'
 theme = "ananke"
 pagination.pagerSize = 10
 
+googleAnalytics = "G-G06FDNRL90"
+
 [menu]
   [[menu.main]]
     name = "Home"
