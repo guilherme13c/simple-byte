@@ -30,7 +30,7 @@ Modern computing systems require a delicate balance between processing speed, da
 
 ## The Concept of Memory Hierarchy
 
-![Memory Hierarchy Pyramid Diagram](./Memory-Hierarchy-removebg.png "Memory Hierarchy Pyramid Diagram")
+![Memory Hierarchy Pyramid Diagram](./Memory-Hierarchy.png "Memory Hierarchy Pyramid Diagram")
 
 Memory hierarchy is structured as a pyramid: the closer the memory is to the processor, the faster and more expensive it is, but also smaller in size. Conversely, memory further from the CPU is slower and cheaper but offers higher capacity. This hierarchy exploits the principles of spatial and temporal locality—programs tend to access the same memory locations repeatedly or within close proximity.
 
