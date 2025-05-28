@@ -10,11 +10,6 @@ pagination.pagerSize = 10
     url = "/"
     weight = 1
 
-  [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 2
-
 [frontmatter]
   date = ['date', 'pubdate', 'lastmod', 'modified']
   expiryDate = ['unpublishdate']
@@ -23,9 +18,7 @@ pagination.pagerSize = 10
 
 [params]
   author = "Guilherme Caporali"
-  favicon = "favicon.ico"
-  logo = "images/logo.png"
-  subtitle = 'Reference, Tutorials, and Explanations'
+  favicon = false
 
 [caches]
   [caches.images]

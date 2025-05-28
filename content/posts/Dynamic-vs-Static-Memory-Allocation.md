@@ -2,6 +2,7 @@
 date = '2025-05-27T15:35:31-03:00'
 draft = false
 title = 'Dynamic vs Static Memory Allocation'
+summary = 'Learn how memory allocation works on different languages, and understand different memory models.'
 +++
 
 # Dynamic vs Static Memory Allocation
