@@ -7,23 +7,22 @@ summary = 'A deep dive into the structure, speed, and innovation behind modern c
 
 ## Table of Contents
 
-* [Introduction](#introduction)
-* [The Concept of Memory Hierarchy](#the-concept-of-memory-hierarchy)
-* [Placeholder: Memory Hierarchy Pyramid Diagram](#placeholder-memory-hierarchy-pyramid-diagram)
-* [Registers](#registers)
-* [Cache Memory (L1, L2, L3)](#cache-memory-l1-l2-l3)
-* [Main Memory (RAM)](#main-memory-ram)
-* [Storage: SSDs and HDDs](#storage-ssds-and-hdds)
-* [Remote and Cloud Storage](#remote-and-cloud-storage)
-* [Summary Table: Comparing Memory Technologies](#summary-table-comparing-memory-technologies)
-* [Historical Evolution of Memory Systems](#historical-evolution-of-memory-systems)
-* [Current Challenges in Memory Systems](#current-challenges-in-memory-systems)
-* [Neuromorphic and Emerging Memory Technologies](#neuromorphic-and-emerging-memory-technologies)
-* [In-Memory Computing](#in-memory-computing)
-* [Real-World Analogies for Better Understanding](#real-world-analogies-for-better-understanding)
-* [Conclusion](#conclusion)
-* [Recommended Resources](#recommended-resources)
-* [FAQs](#faqs)
+1. [Introduction](#introduction)
+2. [The Concept of Memory Hierarchy](#the-concept-of-memory-hierarchy)
+3. [Registers](#registers)
+4. [Cache Memory (L1, L2, L3)](#cache-memory-l1-l2-l3)
+5. [Main Memory (RAM)](#main-memory-ram)
+6. [Storage: SSDs and HDDs](#storage-ssds-and-hdds)
+7. [Remote and Cloud Storage](#remote-and-cloud-storage)
+8. [Summary Table: Comparing Memory Technologies](#summary-table-comparing-memory-technologies)
+9. [Historical Evolution of Memory Systems](#historical-evolution-of-memory-systems)
+10. [Current Challenges in Memory Systems](#current-challenges-in-memory-systems)
+11. [Neuromorphic and Emerging Memory Technologies](#neuromorphic-and-emerging-memory-technologies)
+12. [In-Memory Computing](#in-memory-computing)
+13. [Real-World Analogies for Better Understanding](#real-world-analogies-for-better-understanding)
+14. [Conclusion](#conclusion)
+15. [Recommended Resources](#recommended-resources)
+16. [FAQ](#faq)
 
 ## Introduction
 
@@ -159,7 +158,7 @@ Memory hierarchy is a cornerstone of system performance. It balances speed, cost
 
   * MIT 6.004, Carnegie Mellon’s 15-213
 
-## FAQs
+## FAQ
 
 **Q1: Why is memory hierarchy needed?**
 To efficiently manage the trade-off between speed, cost, and capacity in modern computing systems.
@@ -175,5 +174,3 @@ A paradigm where computation is performed directly inside memory arrays.
 
 **Q5: What are emerging memory technologies?**
 Memristors, ReRAM, PCM, and STT-RAM that offer new possibilities in performance and efficiency.
-
-Would you like me to generate a DALL·E image prompt for the memory hierarchy pyramid diagram?
