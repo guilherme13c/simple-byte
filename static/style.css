@@ -1,48 +1,254 @@
-body {
-	font-family: system-ui, sans-serif;
-	line-height: 1.6;
+:root {
+	--bg-color: #ffffff;
+	--text-color: #333333;
+	--text-muted: #666666;
+	--border-color: #eeeeee;
+	--border-light: #f0f0f0;
+	--code-bg: #f5f5f5;
+	--link-hover: #0066cc;
+	--quote-border: #dddddd;
+}
+
+[data-theme="dark"] {
+	--bg-color: #1a1a1a;
+	--text-color: #e0e0e0;
+	--text-muted: #a0a0a0;
+	--border-color: #333333;
+	--border-light: #2a2a2a;
+	--code-bg: #2a2a2a;
+	--link-hover: #4da6ff;
+	--quote-border: #444444;
+}
+
+* {
 	margin: 0;
 	padding: 0;
-	background: #f9f9f9;
-	color: #333;
-    justify-items: center;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		sans-serif;
+	line-height: 1.6;
+	color: var(--text-color);
+	background: var(--bg-color);
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	border-bottom: 1px solid var(--border-color);
+	padding: 20px 0;
+	margin-bottom: 40px;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.nav-section {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 30px;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--text-muted);
+	font-weight: 500;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: var(--text-color);
+}
+
+.theme-toggle {
+	background: none;
+	border: 1px solid var(--border-color);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+	color: var(--text-color);
+}
+
+.theme-toggle:hover {
+	background: var(--border-light);
+	transform: scale(1.1);
+}
+
+.theme-icon {
+	width: 18px;
+	height: 18px;
+	transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover .theme-icon {
+	transform: rotate(180deg);
 }
 
 main {
-	max-width: 1000px;
+	min-height: 60vh;
 }
 
-header,
 footer {
+	border-top: 1px solid var(--border-color);
+	padding: 40px 0;
+	margin-top: 60px;
 	text-align: center;
-	padding: 0;
-    margin: 0;
-	background: #333;
-    color: #f9f9f9;
+	color: var(--text-muted);
+	font-size: 14px;
 }
 
-a {
-	color: #0066cc;
+.post-meta {
+	color: var(--text-muted);
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.post-title {
+	font-size: 32px;
+	margin-bottom: 10px;
+	line-height: 1.2;
+	color: var(--text-color);
+}
+
+.post-list {
+	list-style: none;
+}
+
+.post-item {
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid var(--border-light);
+}
+
+.post-item:last-child {
+	border-bottom: none;
+}
+
+.post-item h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.post-item h2 a {
+	text-decoration: none;
+	color: var(--text-color);
+	transition: color 0.3s ease;
+}
+
+.post-item h2 a:hover {
+	color: var(--link-hover);
+}
+
+.post-excerpt {
+	color: var(--text-muted);
+	margin-top: 10px;
+}
+
+.content {
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	color: var(--text-color);
+}
+
+.content p {
+	margin-bottom: 20px;
+}
+
+.content code {
+	background: var(--code-bg);
+	padding: 2px 6px;
+	border-radius: 3px;
+	font-family: "Monaco", "Consolas", monospace;
+	color: var(--text-color);
+}
+
+.content pre {
+	background: var(--code-bg);
+	padding: 20px;
+	border-radius: 5px;
+	overflow-x: auto;
+	margin: 20px 0;
+	border: 1px solid var(--border-color);
+}
+
+.content pre code {
+	background: none;
+	padding: 0;
+}
+
+.content blockquote {
+	border-left: 4px solid var(--quote-border);
+	padding-left: 20px;
+	margin: 20px 0;
+	color: var(--text-muted);
+}
+
+.content a {
+	color: var(--link-hover);
 	text-decoration: none;
 }
 
-a:hover {
+.content a:hover {
 	text-decoration: underline;
 }
 
-h1,
-h2,
-h3 {
-	color: #222;
+@media (max-width: 768px) {
+	.header-content {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.nav-section {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	nav ul {
+		gap: 20px;
+	}
+
+	.post-title {
+		font-size: 28px;
+	}
 }
 
-ul {
-	padding-left: 1.5rem;
-}
-
-article {
-	background: #fff;
-	padding: 1.5rem;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+/* Theme transition for smooth switching */
+* {
+	transition: background-color 0.3s ease, color 0.3s ease,
+		border-color 0.3s ease;
 }
