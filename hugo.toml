@@ -1,7 +1,6 @@
 baseURL = 'https://guilherme13c.github.io/simple-byte/'
 languageCode = 'en-us'
 title = 'Simple Byte'
-theme = "ananke"
 pagination.pagerSize = 10
 
 googleAnalytics = "G-WGBSERX7NC"

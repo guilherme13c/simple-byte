@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Simple Byte</title>
-    <link>https://guilherme13c.github.io/simple-byte/posts/</link>
+    <link>http://localhost:1313/simple-byte/posts/</link>
     <description>Recent content in Posts on Simple Byte</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 28 May 2025 09:29:51 -0300</lastBuildDate>
-    <atom:link href="https://guilherme13c.github.io/simple-byte/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/simple-byte/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GPU vs CPU: Understanding the Differences and Use Cases</title>
-      <link>https://guilherme13c.github.io/simple-byte/posts/gpu-x-cpu-guide/</link>
+      <link>http://localhost:1313/simple-byte/posts/gpu-x-cpu-guide/</link>
       <pubDate>Wed, 28 May 2025 09:29:51 -0300</pubDate>
-      <guid>https://guilherme13c.github.io/simple-byte/posts/gpu-x-cpu-guide/</guid>
+      <guid>http://localhost:1313/simple-byte/posts/gpu-x-cpu-guide/</guid>
       <description>Understand the difference between CPUs and GPUs, diving into the world of compute acceleration and parallel programming.</description>
     </item>
     <item>
       <title>Dynamic vs Static Memory Allocation</title>
-      <link>https://guilherme13c.github.io/simple-byte/posts/dynamic-vs-static-memory-allocation/</link>
+      <link>http://localhost:1313/simple-byte/posts/dynamic-vs-static-memory-allocation/</link>
       <pubDate>Tue, 27 May 2025 15:35:31 -0300</pubDate>
-      <guid>https://guilherme13c.github.io/simple-byte/posts/dynamic-vs-static-memory-allocation/</guid>
+      <guid>http://localhost:1313/simple-byte/posts/dynamic-vs-static-memory-allocation/</guid>
       <description>Learn how memory allocation works on different languages, and understand different memory models.</description>
     </item>
   </channel>

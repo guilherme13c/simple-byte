@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://guilherme13c.github.io/simple-byte/posts/gpu-x-cpu-guide/</loc>
+    <loc>http://localhost:1313/simple-byte/posts/gpu-x-cpu-guide/</loc>
     <lastmod>2025-05-28T09:29:51-03:00</lastmod>
   </url><url>
-    <loc>https://guilherme13c.github.io/simple-byte/posts/</loc>
+    <loc>http://localhost:1313/simple-byte/posts/</loc>
     <lastmod>2025-05-28T09:29:51-03:00</lastmod>
   </url><url>
-    <loc>https://guilherme13c.github.io/simple-byte/</loc>
+    <loc>http://localhost:1313/simple-byte/</loc>
     <lastmod>2025-05-28T09:29:51-03:00</lastmod>
   </url><url>
-    <loc>https://guilherme13c.github.io/simple-byte/posts/dynamic-vs-static-memory-allocation/</loc>
+    <loc>http://localhost:1313/simple-byte/posts/dynamic-vs-static-memory-allocation/</loc>
     <lastmod>2025-05-27T15:35:31-03:00</lastmod>
   </url><url>
-    <loc>https://guilherme13c.github.io/simple-byte/categories/</loc>
+    <loc>http://localhost:1313/simple-byte/categories/</loc>
   </url><url>
-    <loc>https://guilherme13c.github.io/simple-byte/tags/</loc>
+    <loc>http://localhost:1313/simple-byte/tags/</loc>
   </url>
 </urlset>
