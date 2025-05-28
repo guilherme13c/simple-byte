@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Gpu X Cpu Guide | Simple Byte</title>
+    <title>GPU vs CPU: Understanding the Differences and Use Cases | Simple Byte</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Understand the difference between CPUs and GPUs, diving into the world of compute acceleration and parallel programming.">
     <meta name="generator" content="Hugo 0.147.5">
@@ -38,7 +38,7 @@
 
     <meta property="og:url" content="http://localhost:1313/simple-byte/posts/gpu-x-cpu-guide/">
   <meta property="og:site_name" content="Simple Byte">
-  <meta property="og:title" content="Gpu X Cpu Guide">
+  <meta property="og:title" content="GPU vs CPU: Understanding the Differences and Use Cases">
   <meta property="og:description" content="Understand the difference between CPUs and GPUs, diving into the world of compute acceleration and parallel programming.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -46,13 +46,13 @@
     <meta property="article:published_time" content="2025-05-28T09:29:51-03:00">
     <meta property="article:modified_time" content="2025-05-28T09:29:51-03:00">
 
-  <meta itemprop="name" content="Gpu X Cpu Guide">
+  <meta itemprop="name" content="GPU vs CPU: Understanding the Differences and Use Cases">
   <meta itemprop="description" content="Understand the difference between CPUs and GPUs, diving into the world of compute acceleration and parallel programming.">
   <meta itemprop="datePublished" content="2025-05-28T09:29:51-03:00">
   <meta itemprop="dateModified" content="2025-05-28T09:29:51-03:00">
-  <meta itemprop="wordCount" content="1442">
+  <meta itemprop="wordCount" content="1421">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Gpu X Cpu Guide">
+  <meta name="twitter:title" content="GPU vs CPU: Understanding the Differences and Use Cases">
   <meta name="twitter:description" content="Understand the difference between CPUs and GPUs, diving into the world of compute acceleration and parallel programming.">
 
 	
@@ -106,7 +106,7 @@
           
         Posts
       </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">Gpu X Cpu Guide</h1>
+<h1 class="f1 athelas mt3 mb1">GPU vs CPU: Understanding the Differences and Use Cases</h1>
       
       <p class="tracked"><strong>Guilherme Caporali</strong>
       </p>
@@ -119,7 +119,26 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="gpu-vs-cpu-understanding-the-differences-and-use-cases">GPU vs CPU: Understanding the Differences and Use Cases</h1>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#what-is-a-cpu-central-processing-unit">What is a CPU</a></li>
+<li><a href="#what-is-a-gpu-graphics-processing-unit">What is a GPU</a></li>
+<li><a href="#key-architectural-differences">Key Architectural Differences</a></li>
+<li><a href="#the-graphics-pipeline-why-gpus-were-invented">Graphics Pipeline</a></li>
+<li><a href="#matrix-multiplications-the-heart-of-gpu-computation">Matrix Multiplication</a></li>
+<li><a href="#thread-types-and-execution-models">Thread Types and Execution Models</a></li>
+<li><a href="#when-should-gpus-be-used">When should GPUs be used?</a></li>
+<li><a href="#applications-that-dont-benefit-from-gpus">Applications That Don’t Benefit From GPUs</a></li>
+<li><a href="#other-specialized-processors">Other Specialized Processors</a></li>
+<li><a href="#gpu-apis-and-programming-models">GPU APIs and Programming Models</a></li>
+<li><a href="#limitations-and-challenges">Limitations and Chalanges</a></li>
+<li><a href="#emerging-trends">Emerging Trendes</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#recommended-resources">Recommended Resources</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ol>
+<hr>
 <h2 id="introduction">Introduction</h2>
 <p>The exponential escalation in computational demands—spurred by machine learning, high-performance computing (HPC), and real-time rendering—has catalyzed the evolution of heterogeneous computing paradigms. At the center of this landscape lie two pivotal processing architectures: the Central Processing Unit (CPU) and the Graphics Processing Unit (GPU). Each possesses unique microarchitectural characteristics optimized for different classes of workloads. An in-depth understanding of their respective capabilities and limitations is indispensable for advanced system design and optimization.</p>
 <p>Conceptually, the CPU serves as a control-centric processing unit with architectural versatility, favoring complex, serial execution patterns. Conversely, the GPU epitomizes data-parallel compute density, engineered for throughput over latency, originally tailored for rasterization pipelines and now repurposed for data-intensive applications such as tensor computations and massive parallel simulations.</p>
@@ -175,7 +194,7 @@
 <p>This structure enables GPUs to scale across thousands of concurrent threads. Threads in a warp execute in SIMT fashion, which is efficient as long as threads follow the same execution path. Divergence (e.g., conditional branching within a warp) can cause serialization and performance degradation.</p>
 <p>CPUs handle fewer threads but provide better performance per thread, featuring rich context switching capabilities and full control flow flexibility.</p>
 <hr>
-<h2 id="the-compromise-when-should-gpus-be-used">The Compromise: When should GPUs be used?</h2>
+<h2 id="when-should-gpus-be-used">When should GPUs be used?</h2>
 <h3 id="when-cpus-win-best-use-cases-for-cpus">When CPUs Win: Best Use Cases for CPUs</h3>
 <p>CPUs remain the optimal choice for:</p>
 <ul>
@@ -191,14 +210,6 @@
 <li>Image and video processing</li>
 <li>Simulation of physical systems (e.g., particle systems, weather models)</li>
 <li>Large-scale matrix and vector computations</li>
-</ul>
-<hr>
-<h2 id="real-world-analogies">Real-World Analogies</h2>
-<ul>
-<li><strong>CPU as a craftsman</strong>, skilled and precise, handling varied tasks efficiently.</li>
-<li><strong>GPU as a factory</strong>, executing thousands of the same task simultaneously.</li>
-<li><strong>CPU as a conductor</strong>, directing the orchestra (system).</li>
-<li><strong>GPU as the orchestra</strong>, performing massively parallel computation.</li>
 </ul>
 <hr>
 <h2 id="applications-that-dont-benefit-from-gpus">Applications That Don’t Benefit From GPUs</h2>
@@ -248,13 +259,6 @@
 <hr>
 <h2 id="recommended-resources">Recommended Resources</h2>
 <ul>
-<li>
-<p><strong>Books</strong>:</p>
-<ul>
-<li><a href="https://www.elsevier.com/books/programming-massively-parallel-processors/kirk/978-0-12-811986-0">&ldquo;Programming Massively Parallel Processors&rdquo; by David B. Kirk and Wen-mei W. Hwu</a></li>
-<li><a href="https://www.morganclaypool.com/doi/abs/10.2200/S00758ED1V01Y201506CAC031">&ldquo;GPU Parallel Program Development Using CUDA&rdquo; by Tolga Soyata</a></li>
-</ul>
-</li>
 <li>
 <p><strong>Courses</strong>:</p>
 <ul>

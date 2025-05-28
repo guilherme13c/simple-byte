@@ -5,8 +5,6 @@ title = 'Dynamic vs Static Memory Allocation'
 summary = 'Learn how memory allocation works on different languages, and understand different memory models.'
 +++
 
-# Dynamic vs Static Memory Allocation
-
 Memory allocation mechanisms are fundamental to the execution of any computer program and form a critical aspect of system architecture and performance modeling. A rigorous understanding of **static** and **dynamic memory allocation** is indispensable for graduate-level research and systems-level design. This article provides a detailed comparative analysis, elaborates on language-specific implementations, and contextualizes both techniques within modern computing paradigms.
 
 ---
@@ -28,7 +26,7 @@ Memory allocation mechanisms are fundamental to the execution of any computer pr
 7. [Decision Criteria Based on Use Case](#decision-criteria-based-on-use-case)
 8. [Illustrative C Code Snippets](#illustrative-c-code-snippets)
 9. [Synthesis and Final Thoughts](#synthesis-and-final-thoughts)
-10. [Frequently Asked Questions](#frequently-asked-questions)
+10. [Frequently Asked Questions](#faq)
 11. [Supplementary Resources](#supplementary-resources)
 
 ---
@@ -192,25 +190,6 @@ An informed choice between static and dynamic memory strategies requires not onl
 
 ---
 
-## Frequently Asked Questions
-
-**1. Is dynamic allocation superior for all high-performance systems?**
-Not universally. While flexible, it introduces latency and unpredictability — constraints unacceptable in hard real-time systems.
-
-**2. What are the long-term consequences of not managing dynamic memory properly?**
-Memory leaks, fragmentation, and potentially catastrophic failure in long-lived or continuously running applications.
-
-**3. Can hybrid allocation strategies be beneficial?**
-Yes, especially when short-lived data is stack-allocated and complex structures are heap-managed.
-
-**4. Why does stack allocation outperform heap in most benchmarks?**
-Stack memory benefits from LIFO access, minimal bookkeeping, and cache coherence.
-
-**5. How do modern languages mitigate memory management risks?**
-Through garbage collection, ownership semantics, reference counting, and smart pointers.
-
----
-
 ## Supplementary Resources
 
 ### Books
@@ -227,9 +206,25 @@ Through garbage collection, ownership semantics, reference counting, and smart p
 ### Blog Posts
 
 * [Stack vs Heap Memory Allocation](https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/)
-
 * [How Memory Allocation Works in C](https://www.geeksforgeeks.org/memory-layout-of-c-program/)
-
 * [Rust’s Ownership Model](https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html)
-
 * [Zig’s Memory Model](https://ziglang.org/documentation/master/#Memory-Allocation)
+
+---
+
+## FAQ
+
+**1. Is dynamic allocation superior for all high-performance systems?**
+Not universally. While flexible, it introduces latency and unpredictability — constraints unacceptable in hard real-time systems.
+
+**2. What are the long-term consequences of not managing dynamic memory properly?**
+Memory leaks, fragmentation, and potentially catastrophic failure in long-lived or continuously running applications.
+
+**3. Can hybrid allocation strategies be beneficial?**
+Yes, especially when short-lived data is stack-allocated and complex structures are heap-managed.
+
+**4. Why does stack allocation outperform heap in most benchmarks?**
+Stack memory benefits from LIFO access, minimal bookkeeping, and cache coherence.
+
+**5. How do modern languages mitigate memory management risks?**
+Through garbage collection, ownership semantics, reference counting, and smart pointers.

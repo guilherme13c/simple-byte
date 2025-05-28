@@ -50,7 +50,7 @@
   <meta itemprop="description" content="Learn how memory allocation works on different languages, and understand different memory models.">
   <meta itemprop="datePublished" content="2025-05-27T15:35:31-03:00">
   <meta itemprop="dateModified" content="2025-05-27T15:35:31-03:00">
-  <meta itemprop="wordCount" content="909">
+  <meta itemprop="wordCount" content="902">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Dynamic vs Static Memory Allocation">
   <meta name="twitter:description" content="Learn how memory allocation works on different languages, and understand different memory models.">
@@ -119,8 +119,7 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="dynamic-vs-static-memory-allocation">Dynamic vs Static Memory Allocation</h1>
-<p>Memory allocation mechanisms are fundamental to the execution of any computer program and form a critical aspect of system architecture and performance modeling. A rigorous understanding of <strong>static</strong> and <strong>dynamic memory allocation</strong> is indispensable for graduate-level research and systems-level design. This article provides a detailed comparative analysis, elaborates on language-specific implementations, and contextualizes both techniques within modern computing paradigms.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Memory allocation mechanisms are fundamental to the execution of any computer program and form a critical aspect of system architecture and performance modeling. A rigorous understanding of <strong>static</strong> and <strong>dynamic memory allocation</strong> is indispensable for graduate-level research and systems-level design. This article provides a detailed comparative analysis, elaborates on language-specific implementations, and contextualizes both techniques within modern computing paradigms.</p>
 <hr>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
@@ -142,7 +141,7 @@
 <li><a href="#decision-criteria-based-on-use-case">Decision Criteria Based on Use Case</a></li>
 <li><a href="#illustrative-c-code-snippets">Illustrative C Code Snippets</a></li>
 <li><a href="#synthesis-and-final-thoughts">Synthesis and Final Thoughts</a></li>
-<li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
 <li><a href="#supplementary-resources">Supplementary Resources</a></li>
 </ol>
 <hr>
@@ -305,18 +304,6 @@
 <h2 id="synthesis-and-final-thoughts">Synthesis and Final Thoughts</h2>
 <p>An informed choice between static and dynamic memory strategies requires not only an understanding of their mechanisms but also a contextual assessment based on the application domain. Researchers and developers should strive to align allocation strategies with workload characteristics, performance constraints, and system architecture.</p>
 <hr>
-<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
-<p><strong>1. Is dynamic allocation superior for all high-performance systems?</strong>
-Not universally. While flexible, it introduces latency and unpredictability — constraints unacceptable in hard real-time systems.</p>
-<p><strong>2. What are the long-term consequences of not managing dynamic memory properly?</strong>
-Memory leaks, fragmentation, and potentially catastrophic failure in long-lived or continuously running applications.</p>
-<p><strong>3. Can hybrid allocation strategies be beneficial?</strong>
-Yes, especially when short-lived data is stack-allocated and complex structures are heap-managed.</p>
-<p><strong>4. Why does stack allocation outperform heap in most benchmarks?</strong>
-Stack memory benefits from LIFO access, minimal bookkeeping, and cache coherence.</p>
-<p><strong>5. How do modern languages mitigate memory management risks?</strong>
-Through garbage collection, ownership semantics, reference counting, and smart pointers.</p>
-<hr>
 <h2 id="supplementary-resources">Supplementary Resources</h2>
 <h3 id="books">Books</h3>
 <ul>
@@ -331,19 +318,23 @@ Through garbage collection, ownership semantics, reference counting, and smart p
 </ul>
 <h3 id="blog-posts">Blog Posts</h3>
 <ul>
-<li>
-<p><a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/">Stack vs Heap Memory Allocation</a></p>
-</li>
-<li>
-<p><a href="https://www.geeksforgeeks.org/memory-layout-of-c-program/">How Memory Allocation Works in C</a></p>
-</li>
-<li>
-<p><a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Rust’s Ownership Model</a></p>
-</li>
-<li>
-<p><a href="https://ziglang.org/documentation/master/#Memory-Allocation">Zig’s Memory Model</a></p>
-</li>
+<li><a href="https://www.geeksforgeeks.org/stack-vs-heap-memory-allocation/">Stack vs Heap Memory Allocation</a></li>
+<li><a href="https://www.geeksforgeeks.org/memory-layout-of-c-program/">How Memory Allocation Works in C</a></li>
+<li><a href="https://doc.rust-lang.org/book/ch04-00-understanding-ownership.html">Rust’s Ownership Model</a></li>
+<li><a href="https://ziglang.org/documentation/master/#Memory-Allocation">Zig’s Memory Model</a></li>
 </ul>
+<hr>
+<h2 id="faq">FAQ</h2>
+<p><strong>1. Is dynamic allocation superior for all high-performance systems?</strong>
+Not universally. While flexible, it introduces latency and unpredictability — constraints unacceptable in hard real-time systems.</p>
+<p><strong>2. What are the long-term consequences of not managing dynamic memory properly?</strong>
+Memory leaks, fragmentation, and potentially catastrophic failure in long-lived or continuously running applications.</p>
+<p><strong>3. Can hybrid allocation strategies be beneficial?</strong>
+Yes, especially when short-lived data is stack-allocated and complex structures are heap-managed.</p>
+<p><strong>4. Why does stack allocation outperform heap in most benchmarks?</strong>
+Stack memory benefits from LIFO access, minimal bookkeeping, and cache coherence.</p>
+<p><strong>5. How do modern languages mitigate memory management risks?</strong>
+Through garbage collection, ownership semantics, reference counting, and smart pointers.</p>
 <ul class="pa0">
   
 </ul>

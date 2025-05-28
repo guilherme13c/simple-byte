@@ -1,11 +1,30 @@
 +++
 date = '2025-05-28T09:29:51-03:00'
 draft = false
-title = 'Gpu X Cpu Guide'
+title = 'GPU vs CPU: Understanding the Differences and Use Cases'
 summary= 'Understand the difference between CPUs and GPUs, diving into the world of compute acceleration and parallel programming.'
 +++
 
-# GPU vs CPU: Understanding the Differences and Use Cases
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [What is a CPU](#what-is-a-cpu-central-processing-unit)
+3. [What is a GPU](#what-is-a-gpu-graphics-processing-unit)
+4. [Key Architectural Differences](#key-architectural-differences)
+5. [Graphics Pipeline](#the-graphics-pipeline-why-gpus-were-invented)
+6. [Matrix Multiplication](#matrix-multiplications-the-heart-of-gpu-computation)
+7. [Thread Types and Execution Models](#thread-types-and-execution-models)
+8. [When should GPUs be used?](#when-should-gpus-be-used)
+9. [Applications That Don’t Benefit From GPUs](#applications-that-dont-benefit-from-gpus)
+10. [Other Specialized Processors](#other-specialized-processors)
+11. [GPU APIs and Programming Models](#gpu-apis-and-programming-models)
+12. [Limitations and Chalanges](#limitations-and-challenges)
+13. [Emerging Trendes](#emerging-trends)
+14. [Conclusion](#conclusion)
+15. [Recommended Resources](#recommended-resources)
+16. [FAQ](#faq)
+
+---
 
 ## Introduction
 
@@ -97,7 +116,7 @@ CPUs handle fewer threads but provide better performance per thread, featuring r
 
 ---
 
-## The Compromise: When should GPUs be used?
+## When should GPUs be used?
 
 ### When CPUs Win: Best Use Cases for CPUs
 
@@ -116,15 +135,6 @@ GPUs dominate in highly parallel tasks, such as:
 * Image and video processing
 * Simulation of physical systems (e.g., particle systems, weather models)
 * Large-scale matrix and vector computations
-
----
-
-## Real-World Analogies
-
-* **CPU as a craftsman**, skilled and precise, handling varied tasks efficiently.
-* **GPU as a factory**, executing thousands of the same task simultaneously.
-* **CPU as a conductor**, directing the orchestra (system).
-* **GPU as the orchestra**, performing massively parallel computation.
 
 ---
 
@@ -183,11 +193,6 @@ CPUs and GPUs are not adversaries but collaborators in modern computing. Underst
 ---
 
 ## Recommended Resources
-
-* **Books**:
-
-  * ["Programming Massively Parallel Processors" by David B. Kirk and Wen-mei W. Hwu](https://www.elsevier.com/books/programming-massively-parallel-processors/kirk/978-0-12-811986-0)
-  * ["GPU Parallel Program Development Using CUDA" by Tolga Soyata](https://www.morganclaypool.com/doi/abs/10.2200/S00758ED1V01Y201506CAC031)
 
 * **Courses**:
 
