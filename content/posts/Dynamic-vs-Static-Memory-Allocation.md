@@ -1,4 +1,28 @@
 +++
+keywords = [
+    "memory",
+    "allocation",
+    "static memory",
+    "dynamic memory",
+    "heap",
+    "stack",
+    "c",
+    "c++",
+    "java",
+    "python",
+    "rust",
+    "zig",
+    "go",
+    "performance",
+    "systems design",
+    "garbage collection",
+    "ownership",
+    "pointers",
+    "memory management",
+    "memory hierarchy",
+    "profiling"
+]
+
 date = '2025-05-27T15:35:31-03:00'
 draft = false
 title = 'Dynamic vs Static Memory Allocation'
