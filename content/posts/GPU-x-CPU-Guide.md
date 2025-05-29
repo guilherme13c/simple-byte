@@ -66,10 +66,10 @@ The CPU is the primary execution engine in general-purpose computing systems. Ar
 
 CPUs are highly optimized for:
 
-* Branch-heavy execution flows
-* System-level orchestration (e.g., OS kernel, interrupt handling)
-* Low-latency I/O control and context switching
-* Sequential or moderately parallel workloads with high instruction diversity
+-   Branch-heavy execution flows
+-   System-level orchestration (e.g., OS kernel, interrupt handling)
+-   Low-latency I/O control and context switching
+-   Sequential or moderately parallel workloads with high instruction diversity
 
 While contemporary CPUs integrate vector instruction sets (e.g., AVX, SSE) and multi-core parallelism, their architectural design imposes constraints on massive data-level parallelism due to limited thread and core scalability relative to GPUs.
 
@@ -81,10 +81,10 @@ GPUs originated as fixed-function accelerators for rendering pipelines but have 
 
 Modern GPUs are indispensable for compute-intensive domains including:
 
-* Deep neural network inference and training
-* 3D rendering and real-time ray tracing
-* Molecular dynamics and fluid simulations
-* Cryptographic hashing and zero-knowledge proof generation
+-   Deep neural network inference and training
+-   3D rendering and real-time ray tracing
+-   Molecular dynamics and fluid simulations
+-   Cryptographic hashing and zero-knowledge proof generation
 
 GPUs excel in executing uniform instruction streams over large datasets, with performance predicated on high arithmetic intensity and minimal branching divergence. Their execution model emphasizes throughput maximization, often at the cost of increased latency and programmability complexity.
 
@@ -114,9 +114,9 @@ The genesis of GPU architecture lies in the demands of the real-time graphics pi
 
 ### Key Stages
 
-* **Vertex Processing:** Applies transformations, lighting, and geometry operations.
-* **Rasterization:** Converts geometric primitives into pixels.
-* **Fragment Processing:** Determines final color, depth, and shader effects.
+-   **Vertex Processing:** Applies transformations, lighting, and geometry operations.
+-   **Rasterization:** Converts geometric primitives into pixels.
+-   **Fragment Processing:** Determines final color, depth, and shader effects.
 
 These stages are inherently parallel, each operating on discrete input data with minimal interdependencies. The evolution of the fixed-function pipeline into programmable shaders catalyzed the transition from graphics-specific acceleration to general-purpose GPU computing (GPGPU).
 
@@ -148,19 +148,19 @@ CPUs handle fewer threads but provide better performance per thread, featuring r
 
 CPUs remain the optimal choice for:
 
-* Workloads involving complex logic and decision trees
-* Latency-sensitive applications (e.g., system interrupt handling, UI responsiveness)
-* Applications requiring high single-thread performance
-* General-purpose computing and orchestration
+-   Workloads involving complex logic and decision trees
+-   Latency-sensitive applications (e.g., system interrupt handling, UI responsiveness)
+-   Applications requiring high single-thread performance
+-   General-purpose computing and orchestration
 
 ### When GPUs Win: Best Use Cases for GPUs
 
 GPUs dominate in highly parallel tasks, such as:
 
-* Deep learning model training and inference
-* Image and video processing
-* Simulation of physical systems (e.g., particle systems, weather models)
-* Large-scale matrix and vector computations
+-   Deep learning model training and inference
+-   Image and video processing
+-   Simulation of physical systems (e.g., particle systems, weather models)
+-   Large-scale matrix and vector computations
 
 ---
 
@@ -168,47 +168,47 @@ GPUs dominate in highly parallel tasks, such as:
 
 Not all applications are suited to GPU acceleration. Examples include:
 
-* Recursive algorithms with data dependencies
-* Irregular memory access patterns
-* Workloads with minimal parallelism
-* Small-scale applications where overhead outweighs benefits
+-   Recursive algorithms with data dependencies
+-   Irregular memory access patterns
+-   Workloads with minimal parallelism
+-   Small-scale applications where overhead outweighs benefits
 
 ---
 
 ## Other Specialized Processors
 
-* **TPUs (Tensor Processing Units):** Google-designed ASICs for neural network inference and training.
-* **NPUs (Neural Processing Units):** AI-focused accelerators integrated in mobile/edge devices.
-* **FPGAs/ASICs:** Hardware accelerators tailored for specific algorithms.
-* **DSPs:** Optimized for signal processing and low-power embedded tasks.
+-   **TPUs (Tensor Processing Units):** Google-designed ASICs for neural network inference and training.
+-   **NPUs (Neural Processing Units):** AI-focused accelerators integrated in mobile/edge devices.
+-   **FPGAs/ASICs:** Hardware accelerators tailored for specific algorithms.
+-   **DSPs:** Optimized for signal processing and low-power embedded tasks.
 
 ---
 
 ## GPU APIs and Programming Models
 
-* **CUDA:** NVIDIA’s proprietary language for GPU computing.
-* **OpenCL:** An open standard for heterogeneous computing.
-* **OpenACC:** Directive-based parallelism for scientific workloads.
-* **Vulkan & OpenGL:** Primarily for graphics; Vulkan also supports compute shaders.
-* **Metal (Apple) and DirectCompute (Microsoft):** Platform-specific GPU APIs.
+-   **CUDA:** NVIDIA’s proprietary language for GPU computing.
+-   **OpenCL:** An open standard for heterogeneous computing.
+-   **OpenACC:** Directive-based parallelism for scientific workloads.
+-   **Vulkan & OpenGL:** Primarily for graphics; Vulkan also supports compute shaders.
+-   **Metal (Apple) and DirectCompute (Microsoft):** Platform-specific GPU APIs.
 
 ---
 
 ## Limitations and Challenges
 
-* High power consumption
-* Memory constraints (e.g., shared vs global memory)
-* Portability and vendor lock-in
-* Programming complexity and steep learning curve
+-   High power consumption
+-   Memory constraints (e.g., shared vs global memory)
+-   Portability and vendor lock-in
+-   Programming complexity and steep learning curve
 
 ---
 
 ## Emerging Trends
 
-* Unified memory architectures
-* Heterogeneous computing models
-* AI inference at the edge using NPUs
-* Multi-accelerator environments (CPU + GPU + NPU/TPU)
+-   Unified memory architectures
+-   Heterogeneous computing models
+-   AI inference at the edge using NPUs
+-   Multi-accelerator environments (CPU + GPU + NPU/TPU)
 
 ---
 
@@ -220,30 +220,30 @@ CPUs and GPUs are not adversaries but collaborators in modern computing. Underst
 
 ## Recommended Resources
 
-* **Courses**:
+-   **Courses**:
 
-  * [Stanford’s CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
-  * [MIT OpenCourseWare: High Performance Computing](https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-950-atmospheric-and-oceanic-modelling-spring-2004/lecture-notes/)
+-   [Stanford’s CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
+-   [MIT OpenCourseWare: High Performance Computing](https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-950-atmospheric-and-oceanic-modelling-spring-2004/lecture-notes/)
 
-* **YouTube Videos**:
+-   **YouTube Videos**:
 
-  * [GPUs: Explained](https://www.youtube.com/watch?v=LfdK-v0SbGI&t=66s&ab_channel=IBMTechnology)
-  * [How do Graphics Cards Work? Exploring GPU Architecture](https://www.youtube.com/watch?v=h9Z4oGN89MU&ab_channel=BranchEducation)
-  * [CPU vs GPU (What's the Difference?)](https://youtu.be/_cyVDoyI6NE?si=qONgimP-XRUCZh8X)
-  * [CPU vs GPU | Simply Explained](https://www.youtube.com/watch?v=Axd50ew4pco&ab_channel=TechPrep)
-  * [Nvidia CUDA in 100 Seconds](https://youtu.be/pPStdjuYzSI?si=03XNyc6Qvh71fI2B)
-  * [What is CUDA?](https://www.youtube.com/watch?v=K9anz4aB0S0&t=211s&ab_channel=Computerphile)
+-   [GPUs: Explained](https://www.youtube.com/watch?v=LfdK-v0SbGI&t=66s&ab_channel=IBMTechnology)
+-   [How do Graphics Cards Work? Exploring GPU Architecture](https://www.youtube.com/watch?v=h9Z4oGN89MU&ab_channel=BranchEducation)
+-   [CPU vs GPU (What's the Difference?)](https://youtu.be/_cyVDoyI6NE?si=qONgimP-XRUCZh8X)
+-   [CPU vs GPU | Simply Explained](https://www.youtube.com/watch?v=Axd50ew4pco&ab_channel=TechPrep)
+-   [Nvidia CUDA in 100 Seconds](https://youtu.be/pPStdjuYzSI?si=03XNyc6Qvh71fI2B)
+-   [What is CUDA?](https://www.youtube.com/watch?v=K9anz4aB0S0&t=211s&ab_channel=Computerphile)
 
-* **Blogs**:
+-   **Blogs**:
 
-  * [NVIDIA Technical Blog](https://developer.nvidia.com/blog)
-  * [AMD Developer Central](https://developer.amd.com/resources/developer-guides-manuals/)
-  * [Parallel Forall (NVIDIA)](https://developer.nvidia.com/blog/parallelforall/)
+-   [NVIDIA Technical Blog](https://developer.nvidia.com/blog)
+-   [AMD Developer Central](https://developer.amd.com/resources/developer-guides-manuals/)
+-   [Parallel Forall (NVIDIA)](https://developer.nvidia.com/blog/parallelforall/)
 
-* **Books**:
+-   **Books**:
 
-  * "Programming Massively Parallel Processors" by David B. Kirk and Wen-mei W. Hwu
-  * "GPU Parallel Program Development Using CUDA" by Tolga Soyata
+-   "Programming Massively Parallel Processors" by David B. Kirk and Wen-mei W. Hwu
+-   "GPU Parallel Program Development Using CUDA" by Tolga Soyata
 
 ---
 
