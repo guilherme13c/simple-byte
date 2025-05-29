@@ -1,4 +1,30 @@
 +++
+keywords = [
+    "memory",
+    "hierarchy",
+    "registers",
+    "cache",
+    "ram",
+    "storage",
+    "ssds",
+    "hdds",
+    "cloud",
+    "latency",
+    "bandwidth",
+    "emerging memory",
+    "neuromorphic",
+    "in-memory",
+    "performance",
+    "architecture",
+    "persistence",
+    "cost",
+    "speed",
+    "energy"
+]
+
+[sitemap]
+  changefreq = "never"
+
 date = '2025-05-27T15:35:31-03:00'
 draft = false
 title = 'Understanding Memory Hierarchy: Balancing Speed, Cost, and Capacity'

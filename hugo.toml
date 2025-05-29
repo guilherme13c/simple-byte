@@ -4,6 +4,11 @@ title = 'Simple Byte'
 pagination.pagerSize = 10
 
 googleAnalytics = "G-WGBSERX7NC"
+enableRobotsTXT = true
+
+[sitemap]
+  priority = 1
+  changefreq = "daily"
 
 [menu]
   [[menu.main]]
@@ -24,3 +29,19 @@ googleAnalytics = "G-WGBSERX7NC"
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[taxonomies]
+  keyword = 'keywords'
+
+[related]
+  threshold = 0
+  includeNewer = true
+  toLower = false
+
+  [[related.indices]]
+    name = "keywords"
+    weight = 100
+
+  [[related.indices]]
+    name = "title"
+    weight = 80

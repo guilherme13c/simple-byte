@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-public/
-.vscode/
-=======
 .vscode/
 
 public/
 resources/
 .hugo_build.lock
 site.webmanifest
->>>>>>> e0696e1cf0ce6e587154365012ea8538fdd5cebb
