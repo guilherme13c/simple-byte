@@ -1,29 +1,26 @@
 +++
 keywords = [
-    "cpu",
-    "gpu",
-    "parallelism",
-    "matrix multiplication",
-    "graphics pipeline",
-    "thread model",
-    "simt",
-    "cuda",
-    "opencl",
-    "gpu computing",
-    "programming models",
-    "throughput",
-    "latency",
-    "multithreading",
-    "memory hierarchy",
-    "deep learning",
-    "ray tracing",
-    "gpgpu",
-    "heterogeneous computing",
-    "specialized processors"
+	"cpu",
+	"gpu",
+	"parallelism",
+	"matrix multiplication",
+	"graphics pipeline",
+	"thread model",
+	"simt",
+	"cuda",
+	"opencl",
+	"gpu computing",
+	"programming models",
+	"throughput",
+	"latency",
+	"multithreading",
+	"memory hierarchy",
+	"deep learning",
+	"ray tracing",
+	"gpgpu",
+	"heterogeneous computing",
+	"specialized processors"
 ]
-
-[sitemap]
-  changefreq = "never"
 
 date = '2025-05-28T09:29:51-03:00'
 draft = false
