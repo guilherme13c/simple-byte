@@ -237,7 +237,7 @@ CPUs and GPUs are not adversaries but collaborators in modern computing. Underst
 -   [AMD Developer Central](https://developer.amd.com/resources/developer-guides-manuals/)
 -   [Parallel Forall (NVIDIA)](https://developer.nvidia.com/blog/parallelforall/)
 
-### **Books**:
+### **Books**
 
 -   "Programming Massively Parallel Processors" by David B. Kirk and Wen-mei W. Hwu
 -   "GPU Parallel Program Development Using CUDA" by Tolga Soyata

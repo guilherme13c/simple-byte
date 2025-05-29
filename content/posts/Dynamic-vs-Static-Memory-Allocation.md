@@ -50,8 +50,8 @@ Memory allocation mechanisms are fundamental to the execution of any computer pr
 7. [Decision Criteria Based on Use Case](#decision-criteria-based-on-use-case)
 8. [Illustrative C Code Snippets](#illustrative-c-code-snippets)
 9. [Synthesis and Final Thoughts](#synthesis-and-final-thoughts)
-10. [Frequently Asked Questions](#faq)
-11. [Supplementary Resources](#supplementary-resources)
+10. [Supplementary Resources](#supplementary-resources)
+11. [FAQ](#faq)
 
 ---
 
