@@ -23,6 +23,9 @@ keywords = [
     "profiling"
 ]
 
+[sitemap]
+  changefreq = "never"
+
 date = '2025-05-27T15:35:31-03:00'
 draft = false
 title = 'Dynamic vs Static Memory Allocation'

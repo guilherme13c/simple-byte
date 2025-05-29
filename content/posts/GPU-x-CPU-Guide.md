@@ -22,6 +22,8 @@ keywords = [
     "specialized processors"
 ]
 
+[sitemap]
+  changefreq = "never"
 
 date = '2025-05-28T09:29:51-03:00'
 draft = false

@@ -4,6 +4,11 @@ title = 'Simple Byte'
 pagination.pagerSize = 10
 
 googleAnalytics = "G-WGBSERX7NC"
+enableRobotsTXT = true
+
+[sitemap]
+  priority = 1
+  changefreq = "daily"
 
 [menu]
   [[menu.main]]
