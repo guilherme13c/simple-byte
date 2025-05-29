@@ -32,24 +32,30 @@ summary = 'A deep dive into the structure, speed, and innovation behind modern c
 
 1. [Introduction](#introduction)
 2. [The Concept of Memory Hierarchy](#the-concept-of-memory-hierarchy)
-3. [Registers](#registers)
-4. [Cache Memory (L1, L2, L3)](#cache-memory-l1-l2-l3)
-5. [Main Memory (RAM)](#main-memory-ram)
-6. [Storage: SSDs and HDDs](#storage-ssds-and-hdds)
-7. [Remote and Cloud Storage](#remote-and-cloud-storage)
-8. [Summary Table: Comparing Memory Technologies](#summary-table-comparing-memory-technologies)
-9. [Historical Evolution of Memory Systems](#historical-evolution-of-memory-systems)
-10. [Current Challenges in Memory Systems](#current-challenges-in-memory-systems)
-11. [Neuromorphic and Emerging Memory Technologies](#neuromorphic-and-emerging-memory-technologies)
-12. [In-Memory Computing](#in-memory-computing)
-13. [Real-World Analogies for Better Understanding](#real-world-analogies-for-better-understanding)
-14. [Conclusion](#conclusion)
-15. [Recommended Resources](#recommended-resources)
-16. [FAQ](#faq)
+3. [The Different Levels Of Memory](#the-different-levels-of-memory)
+    - [Registers](#registers)
+    - [Cache Memory (L1, L2, L3)](#cache-memory-l1-l2-l3)
+    - [Main Memory (RAM)](#main-memory-ram)
+    - [Storage: SSDs and HDDs](#storage-ssds-and-hdds)
+    - [Remote and Cloud Storage](#remote-and-cloud-storage)
+    - [Summary Table: Comparing Memory Technologies](#summary-table-comparing-memory-technologies)
+    - [Real-World Analogies for Better Understanding](#real-world-analogies-for-better-understanding)
+4. [Historical Evolution of Memory Systems](#historical-evolution-of-memory-systems)
+5. [Current Challenges in Memory Systems](#current-challenges-in-memory-systems)
+6. [Emerging Technologies](#emerging-technologies)
+    - [Neuromorphic and Emerging Memory Technologies](#neuromorphic-and-emerging-memory-technologies)
+    - [In-Memory Computing](#in-memory-computing)
+7. [Conclusion](#conclusion)
+8. [Recommended Resources](#recommended-resources)
+9. [FAQ](#faq)
+
+---
 
 ## Introduction
 
 Modern computing systems require a delicate balance between processing speed, data accessibility, and storage capacity. At the heart of this challenge lies the memory hierarchy—a structured system that organizes memory types by speed, cost, and capacity. The goal is to place data as close as possible to the processor, reducing latency and increasing efficiency, while managing cost and energy consumption.
+
+---
 
 ## The Concept of Memory Hierarchy
 
@@ -59,7 +65,11 @@ Memory hierarchy is structured as a pyramid: the closer the memory is to the pro
 
 The memory hierarchy helps bridge the performance gap between ultra-fast CPUs and comparatively slower memory devices by optimizing data access patterns and minimizing bottlenecks.
 
-## Registers
+---
+
+## The Different Levels Of Memory
+
+### Registers
 
 Registers are the fastest form of memory, residing within the CPU itself. They are used to store temporary data needed for immediate processing—like variables in current operations. Their speed and proximity to execution units mean they consume very little energy, but due to their size and cost, only a few dozen are typically available.
 
@@ -69,7 +79,7 @@ Registers are the fastest form of memory, residing within the CPU itself. They a
 -   **Persistence:** Volatile (data lost on power off)
 -   **Energy Efficiency:** Very high
 
-## Cache Memory (L1, L2, L3)
+### Cache Memory (L1, L2, L3)
 
 Cache is a small pool of memory located on or very near the CPU. It temporarily stores copies of frequently accessed memory from the main RAM, significantly reducing access times. Multi-level caches (L1, L2, L3) offer a compromise between speed and size.
 
@@ -79,7 +89,7 @@ Cache is a small pool of memory located on or very near the CPU. It temporarily 
 
 Caches are managed via hardware algorithms and play a critical role in improving execution performance.
 
-## Main Memory (RAM)
+### Main Memory (RAM)
 
 Main memory, or Random Access Memory (RAM), serves as the primary working space for active processes. It holds the OS, running applications, and immediate data. While significantly slower than cache, it offers much more capacity.
 
@@ -89,7 +99,7 @@ Main memory, or Random Access Memory (RAM), serves as the primary working space 
 -   **Cost per Bit:** Moderate
 -   **Latency:** \~100 ns
 
-## Storage: SSDs and HDDs
+### Storage: SSDs and HDDs
 
 This layer stores persistent data long-term. Hard Disk Drives (HDDs) use mechanical spinning disks, while Solid-State Drives (SSDs) rely on flash memory, offering faster access with no moving parts.
 
@@ -99,7 +109,7 @@ This layer stores persistent data long-term. Hard Disk Drives (HDDs) use mechani
 -   **Capacity:** Very large
 -   **Energy:** Higher consumption compared to RAM
 
-## Remote and Cloud Storage
+### Remote and Cloud Storage
 
 Data stored in the cloud is accessed via networks, introducing significant latency. While not suitable for fast-access needs, it provides unmatched scalability, reliability, and accessibility.
 
@@ -109,7 +119,7 @@ Data stored in the cloud is accessed via networks, introducing significant laten
 -   **Use case:** Backups, archival, distributed storage
 -   **Persistence:** Non-volatile
 
-## Summary Table: Comparing Memory Technologies
+### Summary Table: Comparing Memory Technologies
 
 | Level       | Type       | Speed    | Persistence | Capacity            | Cost       | Energy Use |
 | ----------- | ---------- | -------- | ----------- | ------------------- | ---------- | ---------- |
@@ -119,6 +129,16 @@ Data stored in the cloud is accessed via networks, introducing significant laten
 | SSD         | NAND Flash | \~100μs  | Yes         | 100s GBs            | \$\$       | High       |
 | HDD         | Magnetic   | \~10ms   | Yes         | TBs                 | \$         | High       |
 | Cloud       | Network    | >100ms   | Yes         | Virtually Unlimited | Variable   | Very High  |
+
+### Real-World Analogies for Better Understanding
+
+-   **Register = Desk**: What you're working on right now
+-   **Cache = Backpack**: Quick-to-access essentials
+-   **RAM = Filing Cabinet**: Workspace materials
+-   **SSD/HDD = Basement**: Long-term archives
+-   **Cloud = Offsite Warehouse**: Accessible but slow
+
+---
 
 ## Historical Evolution of Memory Systems
 
@@ -132,6 +152,10 @@ Despite progress, challenges persist:
 -   **Thermal Limits:** High-speed memory generates heat
 -   **Latency Bottlenecks:** Access delays in deeper levels of hierarchy
 -   **Cost Efficiency:** Balancing performance and economic feasibility
+
+---
+
+## Emerging Technologies
 
 ## Neuromorphic and Emerging Memory Technologies
 
@@ -152,39 +176,38 @@ This paradigm reduces energy and delay by minimizing data movement between memor
 -   **Benefits:** Energy savings, reduced latency
 -   **Examples:** AI accelerators, hybrid memory-cpu chips
 
-## Real-World Analogies for Better Understanding
-
--   **Register = Desk**: What you're working on right now
--   **Cache = Backpack**: Quick-to-access essentials
--   **RAM = Filing Cabinet**: Workspace materials
--   **SSD/HDD = Basement**: Long-term archives
--   **Cloud = Offsite Warehouse**: Accessible but slow
+---
 
 ## Conclusion
 
 Memory hierarchy is a cornerstone of system performance. It balances speed, cost, and capacity by using diverse memory technologies across levels. The future lies in blending these layers more intelligently, potentially through neuromorphic designs and in-memory computing models.
 
+---
+
 ## Recommended Resources
 
--   **Books**:
+### **Books**
 
 -   [Computer Architecture: A Quantitative Approach by Hennessy & Patterson](https://www.elsevier.com/books/computer-architecture/hennessy/978-0-12-383872-8)
 -   [Memory Systems: Cache, DRAM, Disk by Bruce Jacob et al.](https://www.elsevier.com/books/memory-systems/jacob/978-0-12-379751-3)
 
--   **Academic Papers**:
+### **Academic Papers**
 
 -   ["Hitting the Memory Wall: Implications of the Obvious" by Wulf and McKee](https://doi.org/10.1145/276203.276223)
 -   [IEEE Xplore – Emerging Memory Technologies](https://ieeexplore.ieee.org/Xplore/home.jsp)
 
--   **YouTube Channels**:
+### **YouTube Channels**
 
 -   [Computerphile](https://www.youtube.com/user/Computerphile)
 -   [Two Minute Papers](https://www.youtube.com/user/keeroyz)
 -   [MIT OpenCourseWare](https://www.youtube.com/user/MIT)
 
--   **Courses**:
+### **Courses**
+
 -   [MIT 6.004: Computation Structures](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-004-computation-structures-spring-2017/)
 -   [Carnegie Mellon 15-213: Introduction to Computer Systems](https://www.cs.cmu.edu/~213/)
+
+---
 
 ## FAQ
 

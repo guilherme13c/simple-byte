@@ -217,12 +217,12 @@ CPUs and GPUs are not adversaries but collaborators in modern computing. Underst
 
 ## Recommended Resources
 
--   **Courses**:
+### **Courses**
 
 -   [Stanford’s CS231n: Convolutional Neural Networks for Visual Recognition](http://cs231n.stanford.edu/)
 -   [MIT OpenCourseWare: High Performance Computing](https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-950-atmospheric-and-oceanic-modelling-spring-2004/lecture-notes/)
 
--   **YouTube Videos**:
+### **YouTube Videos**
 
 -   [GPUs: Explained](https://www.youtube.com/watch?v=LfdK-v0SbGI&t=66s&ab_channel=IBMTechnology)
 -   [How do Graphics Cards Work? Exploring GPU Architecture](https://www.youtube.com/watch?v=h9Z4oGN89MU&ab_channel=BranchEducation)
@@ -231,13 +231,13 @@ CPUs and GPUs are not adversaries but collaborators in modern computing. Underst
 -   [Nvidia CUDA in 100 Seconds](https://youtu.be/pPStdjuYzSI?si=03XNyc6Qvh71fI2B)
 -   [What is CUDA?](https://www.youtube.com/watch?v=K9anz4aB0S0&t=211s&ab_channel=Computerphile)
 
--   **Blogs**:
+### **Blogs**
 
 -   [NVIDIA Technical Blog](https://developer.nvidia.com/blog)
 -   [AMD Developer Central](https://developer.amd.com/resources/developer-guides-manuals/)
 -   [Parallel Forall (NVIDIA)](https://developer.nvidia.com/blog/parallelforall/)
 
--   **Books**:
+### **Books**:
 
 -   "Programming Massively Parallel Processors" by David B. Kirk and Wen-mei W. Hwu
 -   "GPU Parallel Program Development Using CUDA" by Tolga Soyata
