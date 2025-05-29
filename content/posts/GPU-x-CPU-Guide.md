@@ -206,7 +206,7 @@ CPUs and GPUs are not adversaries but collaborators in modern computing. Underst
   * [CPU vs GPU (What's the Difference?)](https://youtu.be/_cyVDoyI6NE?si=qONgimP-XRUCZh8X)
   * [CPU vs GPU | Simply Explained](https://www.youtube.com/watch?v=Axd50ew4pco&ab_channel=TechPrep)
   * [Nvidia CUDA in 100 Seconds](https://youtu.be/pPStdjuYzSI?si=03XNyc6Qvh71fI2B)
-  * [O que é CUDA?](https://www.youtube.com/watch?v=K9anz4aB0S0&t=211s&ab_channel=Computerphile)
+  * [What is CUDA?](https://www.youtube.com/watch?v=K9anz4aB0S0&t=211s&ab_channel=Computerphile)
 
 * **Blogs**:
 
