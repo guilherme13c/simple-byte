@@ -40,12 +40,12 @@ Memory allocation mechanisms are fundamental to the execution of any computer pr
 3. [Dynamic Memory Allocation](#dynamic-memory-allocation)
 4. [Comparative Analysis](#comparative-analysis)
 5. [Language-Specific Memory Models](#language-specific-memory-models)
-    - C/C++
-    - Java
-    - Python
-    - Rust
-    - Zig
-    - Go
+    - [C/C++](#cc)
+    - [Java](#java)
+    - [Python](#python)
+    - [Rust](#rust)
+    - [Zig](#zig)
+    - [Go](#go-golang)
 6. [Architectural Trade-offs and Optimization](#architectural-trade-offs-and-optimization)
 7. [Decision Criteria Based on Use Case](#decision-criteria-based-on-use-case)
 8. [Illustrative C Code Snippets](#illustrative-c-code-snippets)
@@ -145,7 +145,7 @@ Dynamic allocation enables runtime memory acquisition via heap or system-managed
 -   Allocators can be passed contextually to functions, promoting allocator polymorphism.
 -   Designed for predictable and reproducible memory behavior. ([Zig memory documentation](https://ziglang.org/documentation/master/#Memory-Allocation))
 
-### Go (Golang)
+### Go
 
 -   Predominantly heap-allocated memory managed by a concurrent garbage collector.
 -   Escape analysis determines whether variables reside on the heap or stack.
@@ -159,8 +159,6 @@ Dynamic allocation enables runtime memory acquisition via heap or system-managed
 -   Heap allocation is preferable for scalable, asynchronous, or dynamically-sized workloads.
 -   Use profiling tools (e.g., [Valgrind](https://valgrind.org/), [gperftools](https://gperftools.github.io/gperftools/)) to identify inefficiencies.
 -   Prefer language features (e.g., smart pointers in C++) that encapsulate allocation logic safely.
-
----
 
 ## Decision Criteria Based on Use Case
 
